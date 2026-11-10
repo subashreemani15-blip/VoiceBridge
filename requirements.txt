@@ -1,0 +1,5 @@
+Flash
+requests
+python-dotenv
+gnani-vachana
+google-genai

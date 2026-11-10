@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f3f6fb;
+    color: #26344a;
+}
+
+header {
+    background: #2457a6;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.welcome {
+    text-align: center;
+    padding: 45px 15px 25px;
+}
+
+.welcome h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.assistant {
+    background: white;
+    max-width: 650px;
+    margin: 10px auto 50px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+select, textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 20px;
+    border: 1px solid #ccd5e0;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+}
+
+button {
+    padding: 13px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background: #2457a6;
+    color: white;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #173e7c;
+}
+
+#answer {
+    background: #f0f4fa;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 7px;
+    min-height: 65px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}

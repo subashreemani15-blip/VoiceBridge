@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoiceBridge</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>VoiceBridge</h1>
+        <p>Your Voice. Your Language. Your Rights.</p>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>How can we help you?</h2>
+            <p>Explore government schemes and public services in your language.</p>
+        </section>
+
+        <section class="assistant">
+
+            <label for="language">Choose your language:</label>
+
+            <select id="language">
+                <option value="en">English</option>
+                <option value="ta">தமிழ் (Tamil)</option>
+            </select>
+
+            <textarea id="question"
+                placeholder="Type your question here..."></textarea>
+            <div class="audio-upload">
+                <label for="audioFile">Upload a voice recording:</label>
+                <input type="file" id="audioFile" accept="audio/*">
+
+                <button id="transcribeBtn" type="button">
+                Convert Speech to Text
+                </button>
+            </div>
+            <div class="buttons">
+                <button id="voiceBtn">Speak</button>
+                <button id="askBtn">Ask VoiceBridge</button>
+                <button id="speakBtn">Speak Text</button>
+            </div>
+
+            <div id="answer">
+                Your answer will appear here.
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>VoiceBridge © 2026 | Information made accessible to everyone.</p>
+    </footer>
+
+   <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
